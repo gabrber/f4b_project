@@ -65,7 +65,7 @@ ul {
      padding-top: 15px;
 }
 
-.social-links__item img{
+.social-links__img {
     width: 20px;
 }
 
@@ -122,7 +122,7 @@ ul {
     width: 100%;
 }
 
-.band-members__item p{
+.band-members__name, .band-members__desc{
     text-align: left;
     color: #CCC8FF;
     visibility: hidden;
@@ -163,7 +163,7 @@ ul {
     margin-bottom: 115px;
 }
 
-.about-section img {
+.about-section__img {
     border-top: 3px solid #EC008C;
     max-width: 100%;
 }
@@ -246,7 +246,7 @@ ul {
 }
 
 /* VIDEO */
-.video iframe {
+.video__iframe {
     border-top: 3px solid #EC008C;
     max-width: 100%;
 }
@@ -264,7 +264,7 @@ ul {
     padding: 0 0 20px 20px;
 }
 
-.gallery .gallery__image {
+.gallery__image {
     width: 100%;
     border-top: 3px solid #EC008C;
 }
@@ -282,13 +282,13 @@ ul {
     color: rgb(204, 200, 255, 0.8);
 }
 
-.contact .gallery__image {
+.contact__img {
     grid-area: photo;
     max-width: 100%;
     margin-bottom: 30px;
 }
 	
-.contact address {
+.contact__address {
     grid-area: address;
     margin-top: 25%;
     margin-left: 50px;
@@ -316,6 +316,6 @@ ul {
     color: rgb(204, 200, 255, 1);
 }
 
-.form .button {
+.form__button {
     margin-top: 20px;
 }

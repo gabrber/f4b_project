@@ -3,6 +3,7 @@
     <head>
         <title>6BM Band Official Website</title>
         <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     </head>
     <body>
         <header class="page-header">
@@ -80,7 +81,7 @@
             </section>
             <section id="about" class="content-section about-section">
                 <h2 class="content-section__header">About</h2>
-                <img src="./images/band01.jpg" alt="Image of band members standing at the construction site" />
+                <img class="about-section__img" src="./images/band01.jpg" alt="Image of band members standing at the construction site" />
                 <div class="about-section__desc">
                     <h3 class="about-section__desc-header">Straight from Lublin</h3>
                     <p class="about-section__desc-details">
@@ -130,7 +131,7 @@
             </section>
             <section id="video" class="content-section video">
                 <h2 class="content-section__header">Video</h2>
-                <iframe width="853" height="480" src="https://www.youtube.com/embed/AstRXh-vKNI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe class="video__iframe" width="853" height="480" src="https://www.youtube.com/embed/AstRXh-vKNI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </section>
             <section id="photos" class="content-section">
                 <h2 class="content-section__header">Photos</h2>
@@ -167,8 +168,8 @@
             <section id="contact" class="content-section">
                 <h2 class="content-section__header">Contact</h2>
                 <div class="contact">
-                    <img class="gallery__image" src="./images/band12.jpg" alt="Image of band members posing next to a train" />
-                    <address>
+                    <img class="contact__img" src="./images/band12.jpg" alt="Image of band members posing next to a train" />
+                    <address class="contact__address">
                         Tel: 123 456 789<br/>
                         E-mail: 6bmmusic@gmail.com
                     </address>
@@ -182,7 +183,7 @@
                             <input class="form__input" type="text" name="topic" id="topic" required />
                         </div>
                         <div class="form__field">
-                            <button class="button" type="submit">Contact us!</button>
+                            <button class="button form__button" type="submit">Contact us!</button>
                         </div>
                     </form>
                 </div>
@@ -197,16 +198,16 @@
             <h2 class="screen-reader-only">Social media links</h2>
             <ul class="social-links">
                 <li class="social-links__item">
-                    <a class="social-links__link" href="http://facebook.com/"><img src="./images/fb.svg" alt="Facebook" /></a>
+                    <a class="social-links__link" href="http://facebook.com/"><img class=social-links__img src="./images/fb.svg" alt="Facebook" /></a>
                 </li>
                 <li class="social-links__item">
-                    <a class="social-links__link" href="http://instagram.com/"><img src="./images/insta.svg" alt="Instagram" /></a>
+                    <a class="social-links__link" href="http://instagram.com/"><img class=social-links__img src="./images/insta.svg" alt="Instagram" /></a>
                 </li>
                 <li class="social-links__item">
-                    <a class="social-links__link" href="http://last.fm/"><img src="./images/last.svg" alt="=Last.fm" /></a>
+                    <a class="social-links__link" href="http://last.fm/"><img class=social-links__img src="./images/last.svg" alt="=Last.fm" /></a>
                 </li>
                 <li class="social-links__item">
-                    <a class="social-links__link" href="http://youtube.com/"><img src="./images/yout.svg" alt="Youtube" /></a>
+                    <a class="social-links__link" href="http://youtube.com/"><img class=social-links__img src="./images/yout.svg" alt="Youtube" /></a>
                 </li>
             </ul>
         </footer>
