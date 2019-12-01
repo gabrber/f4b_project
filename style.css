@@ -269,6 +269,14 @@ ul {
     border-top: 3px solid #EC008C;
 }
 
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+    }
+}
+
 /* CONTACT */
 .contact {
 	display: grid;
