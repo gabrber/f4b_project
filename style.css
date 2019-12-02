@@ -359,6 +359,9 @@ ul {
     .page-content {
         margin-left: 0px;
     }
+    .content-section {
+        min-height: 50vh;
+    }
 
     .band-members {
         flex-wrap: wrap;
@@ -388,6 +391,10 @@ ul {
         padding-left: 0px;
     }
 
+    .video__iframe {
+        height: 100%;
+    }
+    
     .gallery__item {
         flex-basis: 50%;
     }
