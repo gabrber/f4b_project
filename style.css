@@ -111,10 +111,9 @@ ul {
 /* HOME */
 .band-members {
     display: flex;
-	/*flex-wrap: wrap; */
     flex-direction: row;
     align-items: center;
-	justify-content: center;
+    justify-content: center;
 }
 
 .band-members__image {
@@ -279,7 +278,7 @@ ul {
 
 /* CONTACT */
 .contact {
-	display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -309,17 +308,17 @@ ul {
 
 .form__field {
     grid-area: form;
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
 }
 
 .form__input {
-	margin-top: 10px;
-	width: 300px;
-	padding: 10px;
-	border-radius: 3px;
-	border-style: none;
+    margin-top: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 3px;
+    border-style: none;
     background-color: rgb(204, 200, 255, 0.1);
     color: rgb(204, 200, 255, 1);
 }
