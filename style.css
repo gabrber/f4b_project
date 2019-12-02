@@ -44,7 +44,7 @@ ul {
     padding-top: 15px;
 }
 
-.page-navigation__items a {
+.page-navigation__link {
     font-weight: bold;
     font-size: 13px;
     letter-spacing: 6.7px;
@@ -326,4 +326,89 @@ ul {
 
 .form__button {
     margin-top: 20px;
+}
+
+/* 360x640px */
+@media screen and (max-width: 360px) {
+    body {
+        width: 100vw;
+    }
+    .page-header {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        text-align: right;
+        margin-bottom: 100px;
+    }
+    .page-footer {
+        position: static;
+        margin: 10%;
+    }
+
+    .social-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .social-links__item{
+        padding:0 5px;
+    }
+
+    .page-content {
+        margin-left: 0px;
+    }
+
+    .band-members {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .band-members__item {
+        padding: 5%;
+    }
+
+    .about-section {
+        margin: 0px;
+    }
+    .about-section__desc {
+        position: relative;
+        width: 100%;
+        right: 0px;
+        bottom: 0px;
+        margin-top: 15px;
+    }
+
+    .concerts {
+        flex-direction: column;
+        width: 100%;
+    }
+    .concerts__item {
+        flex-basis: 100%;
+        padding-left: 0px;
+    }
+
+    .gallery__item {
+        flex-basis: 50%;
+    }
+    @supports (display: grid) {
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact__img {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }    
+    .contact__address {
+        margin: 0px;
+        margin-bottom: 30px;
+    }    
 }
