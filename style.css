@@ -329,7 +329,8 @@ ul {
 }
 
 /* 360x640px */
-@media screen and (max-width: 360px) {
+/* max-width: 375px to fit also iphone8 */
+@media screen and (max-width: 375px) {
     body {
         width: 100vw;
     }
