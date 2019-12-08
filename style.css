@@ -40,8 +40,21 @@ ul {
     left: 50px;
 }
 
+.page-navigation__hamburger-button {
+    width: 20px;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.page-navigation__hamburger-img {
+    max-width: 100%;
+}
+
 .page-navigation__items {
-    padding-top: 15px;
+    padding: 15px 0px;
 }
 
 .page-navigation__link {
@@ -341,6 +354,39 @@ ul {
         text-align: right;
         margin-bottom: 100px;
     }
+
+    .page-brand {
+        text-align: center;
+    }
+
+    .page-navigation__hamburger-button {
+        display: inline;
+        position: fixed;
+        top: 60px;
+        right: 50px;
+        z-index: 2;
+    }
+    
+    .page-navigation__hamburger-img {
+        max-width: 100%;
+    }
+
+    .page-navigation__items {
+        display: none;
+    }
+
+    .page-navigation__items-display {
+        z-index: 1;
+        width: 100vw;
+        display: inline-block;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        padding-right: 50px;
+        background-color: rgba(37, 7, 46, 0.8);
+        padding-top: 100px;
+    }
+
     .page-footer {
         position: static;
         margin: 10%;
