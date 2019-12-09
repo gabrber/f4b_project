@@ -41,16 +41,7 @@ ul {
 }
 
 .page-navigation__hamburger-button {
-    width: 20px;
-    padding: 0px;
-    margin: 0px;
-    background-color: transparent;
-    border: none;
     display: none;
-}
-
-.page-navigation__hamburger-img {
-    max-width: 100%;
 }
 
 .page-navigation__items {
@@ -366,11 +357,16 @@ ul {
     }
 
     .page-navigation__hamburger-button {
-        display: inline;
+        display: inline-block;
         position: fixed;
         top: 60px;
         right: 50px;
         z-index: 2;
+        width: 20px;
+        padding: 0px;
+        margin: 0px;
+        background-color: transparent;
+        border: none;
     }
     
     .page-navigation__hamburger-img {
