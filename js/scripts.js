@@ -1,8 +1,8 @@
 // hamburger menu
 const menuButton = document.querySelector('.page-navigation__hamburger-button');
-const navigationItems = document.querySelector('.page-navigation__items');
 
 menuButton.addEventListener('click', (e) => {
+    const navigationItems = document.querySelector('.page-navigation__items');
     navigationItems.classList.toggle('page-navigation__items-display');
 });
 
@@ -11,7 +11,7 @@ const contactForm = document.querySelector('.form')
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    let contactFormData = new FormData(contactForm);
+    const contactFormData = new FormData(contactForm);
     const formObj = Object.fromEntries(contactFormData);
     console.log(formObj);
 });
@@ -19,9 +19,9 @@ contactForm.addEventListener('submit', (e) => {
 // concert button
 const concertButtons = document.querySelectorAll('.concerts__button');
 
-for (var i = 0; i < concertButtons.length; i++) {
+for (let i = 0; i < concertButtons.length; i++) {
     concertButtons[i].addEventListener('click', function(e) {
-        var content = document.createElement("p");
+        let content = document.createElement("p");
         content.textContent = "Have fun!";
         content.classList.add("concerts__button-clicked");
         e.target.replaceWith(content);
