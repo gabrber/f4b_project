@@ -257,6 +257,12 @@ ul {
     margin: 15px 0 15px 30%;
 }
 
+.concerts__button-clicked {
+    grid-area: button;
+    margin: auto;
+    margin-right: 0px;
+}
+
 /* VIDEO */
 .video__iframe {
     border-top: 3px solid #EC008C;
