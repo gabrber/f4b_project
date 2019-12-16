@@ -31,3 +31,22 @@ for (let i = 0; i < concertButtons.length; i++) {
         e.target.replaceWith(content);
   });
 }
+
+// gallery image
+const gallery = document.querySelector('.gallery');
+
+gallery.addEventListener('mouseover', (e) => {
+    if (e.target.classList.contains('gallery__image')) {
+        const galleryImage = e.target;
+        galleryImage.classList.remove('gallery__image--mouseout');
+        galleryImage.classList.add('gallery__image--mouseover');
+    }
+});
+
+gallery.addEventListener('mouseout', (e) => {
+    if (e.target.classList.contains('gallery__image')) {
+        const galleryImage = e.target;
+        galleryImage.classList.remove('gallery__image--mouseover');
+        galleryImage.classList.add('gallery__image--mouseout');
+    }
+});

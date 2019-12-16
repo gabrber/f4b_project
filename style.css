@@ -276,27 +276,31 @@ ul {
 .gallery__image {
     width: 100%;
     border-top: 3px solid #EC008C;
-    animation-duration: 3s;
     animation-timing-function: linear;
+    transition-property: transform;
 }
-
-.gallery__image:hover {
+.gallery__image--mouseover {
+    animation-duration: 1s;
     animation-name: gallery-animation-transform;
+}
+.gallery__image--mouseout {
+    animation-duration: 3s;
+    animation-name: gallery-animation-filter;
 }
 
 @keyframes gallery-animation-transform {
-    0% {transform: rotate(0deg) scale(1);}
-    25% {transform: rotate(5deg) scale(1);}
-    50% {transform: rotate(0deg) scale(1.25);}
-    75% {transform: rotate(-5deg) scale(1.25);}
-    100% {transform: rotate(0deg) scale(1.5);}
+    0% {transform: scale(1);}
+    25% {transform: scale(.9);}
+    50% {transform: scale(.8);}
+    75% {transform: scale(.9);}
+    100% {transform: scale(1);}
 }
 
 @keyframes gallery-animation-filter {
     0% {filter: grayscale(0%);}
-    25% {filter: grayscale(50%);}
+    25% {filter: grayscale(75%);}
     50% {filter: grayscale(100%);}
-    75% {filter: grayscale(50%);}
+    75% {filter: grayscale(75%);}
     100% {filter: grayscale(0%);}
 }
 
