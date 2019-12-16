@@ -276,6 +276,28 @@ ul {
 .gallery__image {
     width: 100%;
     border-top: 3px solid #EC008C;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.gallery__image:hover {
+    animation-name: gallery-animation-transform;
+}
+
+@keyframes gallery-animation-transform {
+    0% {transform: rotate(0deg) scale(1);}
+    25% {transform: rotate(5deg) scale(1);}
+    50% {transform: rotate(0deg) scale(1.25);}
+    75% {transform: rotate(-5deg) scale(1.25);}
+    100% {transform: rotate(0deg) scale(1.5);}
+}
+
+@keyframes gallery-animation-filter {
+    0% {filter: grayscale(0%);}
+    25% {filter: grayscale(50%);}
+    50% {filter: grayscale(100%);}
+    75% {filter: grayscale(50%);}
+    100% {filter: grayscale(0%);}
 }
 
 @supports (display: grid) {
